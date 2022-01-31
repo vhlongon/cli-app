@@ -1,0 +1,31 @@
+{
+  "name": "cli-app",
+  "version": "1.0.0",
+  "description": "simple cli app",
+  "scripts": {
+    "dev": "ts-node-dev --respawn -- src/index.ts",
+    "start": "tsc && node dist/index.js",
+    "build": "tsc"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "bin": "./dist/index.js",
+  "author": "vhlongon",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "chalk-animation": "^1.6.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5",
+    "@types/chalk-animation": "^1.6.1",
+    "@types/figlet": "^1.5.4",
+    "@types/gradient-string": "^1.1.2",
+    "@types/inquirer": "^8.2.0",
+    "@types/node": "^17.0.13",
+    "ts-node-dev": "^1.1.8"
+  }
+}
